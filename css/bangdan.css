@@ -1,0 +1,265 @@
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    background:white;
+    z-index:3;
+}
+nav{
+    height:80px;
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+nav a{
+    font-size:18px;
+    color: #343434;
+}
+.nav_l,.nav_r{
+    display: flex;
+    line-height:80px;
+}
+/* 导航左 */
+.combo{
+    padding: 0 14px;
+    margin-left:10px;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    position: relative;
+}
+.combo:hover{
+    border-left:1px solid #d8d8d8;
+    border-right:1px solid #d8d8d8;
+}
+.combo>i{
+    content:'';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: all linear 0.2s;
+}
+.combo:hover i{
+    transform: rotate(180deg);
+}
+nav ol{
+    display: none;
+    position: absolute;
+    line-height:20px;
+    width:200px;
+    margin-left:-15px;
+    margin-top:-1px;
+    border:1px solid #d8d8d8;
+    background:white;
+}
+nav ol>li{
+    float: left;
+    margin:10px;
+    padding: 5px;
+}
+.combo:hover ol{
+    display: block;
+}
+nav ol>li:hover{
+    background:rgb(239, 66, 59);
+}
+nav ol>li:hover a{
+    color:white;
+}
+.nav_h>a{
+    display: block;
+    padding: 0 22px;
+}
+.nav_h>a:hover{
+    background:rgb(239, 66, 59);
+}
+.nav_h:hover a{
+    color:white;
+}
+.nav_h_1{
+    margin-left:30px;
+}
+/* 导航右 */
+.nav_r>li>form{
+
+}
+.nav_r input[type="text"]{
+    padding-left:20px;
+    padding-right:40px;
+    box-sizing:border-box;
+    font-size: 14px;
+    background:rgb(250, 248, 250);
+    width:260px;
+    height:41px;
+    outline:0;
+    border:1px solid rgb(204, 204, 204);
+    border-radius:30px;
+}
+.nav_r input[type="submit"]{
+    background-image: url("../img/sprite_webpage.png");
+    width:40px;
+    height:40px;
+    outline:0;
+    border:0;
+    border-radius:50%;
+    vertical-align:middle;
+    margin-left:-44px;
+    margin-top:-1px;
+    background-color: #ef4238;
+    cursor: pointer;
+}
+.nav_r>li>a>img{
+    width:40px;
+}
+.nav_r>li>ol{
+    width:135px;
+    margin-left:-15px;
+}
+.nav_r>li:last-child:hover ol{
+    opacity:1;
+}
+a{
+    text-decoration: none;
+}
+.header
+{
+    width: 100%;
+   background: #343434;
+    margin-top: 80px;
+    height: 60px;
+}
+.header>ul
+{
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+}
+.header>ul>li
+{
+    list-style: none;
+    position: relative;
+}
+.header>ul>li>a
+{
+    color: #d8d8d8;
+}
+.header>ul>li:not(:nth-of-type(1))
+{
+    margin-left: 83px;
+}
+.sanjiao
+{
+    border: 10px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    left: 34px;
+    top: 40px;
+    display: none;
+}
+.header>ul>li>a:hover
+{
+    color: #df2d2d;
+}
+.header>ul>li>a:hover+i
+{
+    display: inline-block;
+}
+/*头部上*/
+.genxin
+{
+    width: 872px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 70px;
+}
+.genxin>p
+{
+    color: #8d8d8d;
+    font-size: 12px;
+}
+.genxin>p>i
+{
+    color: #ffc600;
+}
+.genxin>p:nth-of-type(2)
+{
+    margin-top: 10px;
+}
+article
+{
+    width: 950px;
+    margin: 40px auto;
+}
+.meigonghe>img:nth-of-type(1)
+{
+    float: left;
+}
+.meigonghe
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.meigonghe>img:nth-of-type(2)
+{
+    float: left;
+    margin-left: 30px;
+}
+.zhang
+{
+    float: left;
+}
+.zhang>p:nth-of-type(1)
+{
+    font-size: 28px;
+}
+.zhang>p:nth-of-type(2)
+{
+    font-size: 16px;
+    margin-top: 18px;
+}
+.zhang>p:nth-of-type(3)
+{
+    font-size: 16px;
+    color: #8d8d8d;
+}
+.shu
+{
+    float: right;
+}
+.shu>p
+{
+    color: #ffc600;
+}
+.shu>p>i:nth-of-type(1)
+{
+    font-size: 48px;
+}
+.xiabian
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    width: 684px;
+    margin-left: 27px;
+    height: 220px;
+}
+footer>div
+{
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+footer>div>p
+{
+    color: #d8d8d8;
+}

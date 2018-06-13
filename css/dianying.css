@@ -1,0 +1,370 @@
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    background:white;
+    z-index:3;
+}
+nav{
+    height:80px;
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+nav a{
+    font-size:18px;
+    color: #343434;
+}
+.nav_l,.nav_r{
+    display: flex;
+    line-height:80px;
+}
+/* 导航左 */
+.combo{
+    padding: 0 14px;
+    margin-left:10px;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    position: relative;
+}
+.combo:hover{
+    border-left:1px solid #d8d8d8;
+    border-right:1px solid #d8d8d8;
+}
+.combo>i{
+    content:'';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: all linear 0.2s;
+}
+.combo:hover i{
+    transform: rotate(180deg);
+}
+nav ol{
+    display: none;
+    position: absolute;
+    line-height:20px;
+    width:200px;
+    margin-left:-15px;
+    margin-top:-1px;
+    border:1px solid #d8d8d8;
+    background:white;
+}
+nav ol>li{
+    float: left;
+    margin:10px;
+    padding: 5px;
+}
+.combo:hover ol{
+    display: block;
+}
+nav ol>li:hover{
+    background:rgb(239, 66, 59);
+}
+nav ol>li:hover a{
+    color:white;
+}
+.nav_h>a{
+    display: block;
+    padding: 0 22px;
+}
+.nav_h>a:hover{
+    background:rgb(239, 66, 59);
+}
+.nav_h:hover a{
+    color:white;
+}
+.nav_h_1{
+    margin-left:30px;
+}
+/* 导航右 */
+.nav_r>li>form{
+
+}
+.nav_r input[type="text"]{
+    padding-left:20px;
+    padding-right:40px;
+    box-sizing:border-box;
+    font-size: 14px;
+    background:rgb(250, 248, 250);
+    width:260px;
+    height:41px;
+    outline:0;
+    border:1px solid rgb(204, 204, 204);
+    border-radius:30px;
+}
+.nav_r input[type="submit"]{
+    background-image: url("../img/sprite_webpage.png");
+    width:40px;
+    height:40px;
+    outline:0;
+    border:0;
+    border-radius:50%;
+    vertical-align:middle;
+    margin-left:-44px;
+    margin-top:-1px;
+    background-color: #ef4238;
+    cursor: pointer;
+}
+.nav_r>li>a>img{
+    width:40px;
+}
+.nav_r>li>ol{
+    width:135px;
+    margin-left:-15px;
+}
+.nav_r>li:last-child:hover ol{
+    opacity:1;
+}
+a{
+    text-decoration: none;
+}
+/*头部下面的黑色区块*/
+section{
+    width: 100%;
+    height: 60px;
+    background: #48474B;
+    margin-top: 80px;
+}
+.header
+{
+    width: 100%;
+    background: #343434;
+    margin-top: 80px;
+    height: 60px;
+}
+.header>ul
+{
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+}
+.header>ul>li
+{
+    list-style: none;
+    position: relative;
+}
+.header>ul>li>a
+{
+    color: #d8d8d8;
+}
+.header>ul>li:not(:nth-of-type(1))
+{
+    margin-left: 83px;
+}
+.header>ul>li>a:hover
+{
+    color: #df2d2d;
+}
+.header>ul>li>a:hover+i
+{
+    display: inline-block;
+}
+.sanjiao
+ {
+     border: 10px solid;
+     border-color: transparent transparent white transparent;
+     position: absolute;
+     left: 34px;
+     top: 40px;
+     display: none;
+ }
+/*类型选择*/
+article{
+    width: 1120px;
+    height: 200px;
+    margin:40px auto;
+    border: 1px solid #E5E5E5;
+}
+.leixing{
+    width: 1080px;
+    height: 76px;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px dashed #E5E5E5;
+}
+.leixing ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.leixing i{
+    width: 78px;
+    margin-top: 10px;
+    color: #9A9AB2;
+}
+.leixing li{
+    padding:9px 9px;
+}
+.leixing li:not(:nth-of-type(1))
+{
+    margin-left: 28px;
+}
+.leixing li:hover{
+    background: red;
+    border-radius: 30px;
+}
+.leixing li:hover a{
+    color: white;
+}
+.leixing_1{
+    display: flex;
+    height: 46px;
+}
+.leixing_1 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.leixing_1 li{
+     padding:10px 10px;
+ }
+.leixing_1 li:not(:nth-of-type(1))
+{margin-left: 28px}
+.leixing_1 i{
+    width: 48px;
+    margin-top: 14px;
+    color: #9A9AB2;
+    margin-left: 20px;
+}
+.leixing_1 li:hover{
+    background: red;
+    border-radius: 30px;
+}
+.leixing_1 li:hover a{
+    color: white;
+}
+.hongkuang{
+    width: 1120px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.hongkuang>form>label>span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+input[type="radio"]
+{
+    opacity: 0;
+}
+.hongkuang>form>label
+{
+    position: relative;
+}
+.hongkuang>form>label>img
+{
+    opacity: 0;
+    position: absolute;
+   top: 5px;
+    left: 1px;
+}
+input:checked+label>img{
+    opacity: 1;
+}
+.hongkuang>form>input:last-child
+{
+    margin-top: 5px;
+}
+.duoxuan
+{
+    float: right;
+}
+.henduotu{
+    width: 1120px;
+    margin: auto;
+}
+.firstimg{
+    padding-top: 20px;
+}
+.firstimg ul{
+    display: flex;
+    justify-content: space-between;
+}
+.firstimg li{
+    text-align: center;
+    position: relative;
+}
+.firstimg img{
+    padding-bottom: 16px;
+}
+.firstimg p{
+    padding-bottom: 18px;
+}
+.firstimg span{
+    color: #FFBB02;
+    font-style: italic;
+}
+.firstimg img:hover{
+    box-shadow: 2px 2px 2px 2px darkseagreen;
+}
+.firstimg i{
+    background: url("../img/3dmax.png");
+    width: 69px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    left: -3px;
+}
+.firstimg a:hover{
+    color: deepskyblue;
+}
+.shuzi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.shuzi ul{
+    display: flex;
+}
+.shuzi li{
+    padding: 6px 7px;
+    margin-right:10px;
+    border: 1px solid #D8D8D8;
+}
+.shuzi li:hover{
+    background: red;
+}
+/*footer的部分*/
+footer>div
+{
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+footer>div>p
+{
+    color: #d8d8d8;
+}
+.yema
+{
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 98px;
+}
+.yema>span
+{
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+.yema>span:nth-of-type(1)
+{
+    background: #cc0000;
+    color: white;
+}
+.yema>span:hover
+{
+    background: #cc0000;
+    color: white;
+}

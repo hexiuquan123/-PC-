@@ -1,0 +1,195 @@
+article
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+   border-bottom: 2px solid #e02227;
+    display: flex;
+    align-items: center;
+}
+.header>a>img
+{
+    margin-left: 470px;
+}
+.header>a>img:hover
+{
+    transform:scale(1.1);
+    transition: 1s;
+}
+.biaodan
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.biaodanwen
+{
+    float: left;
+    width: 75px;
+    font-size: 14px;
+    margin-left: 37.11%;
+}
+.biaodanwen>p:nth-of-type(1)
+{
+    margin-left: 28px;
+    margin-top: 12px;
+}
+.biaodanwen>p:nth-of-type(2)
+{
+    margin-top:55px;
+}
+.biaodanwen>p:nth-of-type(3)
+{
+    margin-left: 14px;
+    margin-top: 35px;
+}
+.biaodanwen>p:nth-of-type(4)
+{
+    margin-left: 14px;
+    margin-top: 65px;
+}
+input
+{
+    outline: none;
+    width: 260px;
+    height: 36px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+form
+{
+    margin-left: 43.05%;
+
+}
+.you
+{
+    font-size: 14px;
+    color: darkgray;
+}
+.dongtaima>button
+{
+    height: 22px;
+    width: 138px;
+    margin-top: 10px;
+}
+.dongtaima>button>a
+{
+    color: dimgrey;
+}
+.qiangruo
+{
+    width: 260px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.qiangruo>span
+{
+    padding: 5px 36px;
+    background: #eeeeee;
+    font-size: 12px;
+    color: #ffffff;
+}
+.chuangjian
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.qiangruo>span:nth-of-type(2)
+{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.mima>input
+{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.queren>input
+{
+    margin-top: 8px;
+}
+.daanniu
+{
+    width: 180px;
+    height: 36px;
+    background: #e42f34;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border: 0;
+}
+.daanniu:hover
+{
+    background: orangered;
+}
+.daanniu>a
+{
+    color: #ffffff;
+}
+.meituan>a
+{
+    font-size: 13px;
+    color: crimson;
+}
+.footer
+{
+    width: 100%;
+    border-top: 1px solid silver;
+    padding-top: 25px;
+    margin-bottom: 190px;
+}
+.footer>p
+{
+    font-size: 12px;
+    color: lightslategrey;
+    margin-left: 57.31%;
+}
+.qiangruo>span:nth-of-type(1)
+{
+    background: #a5483d;
+}
+.qiangruo>span:nth-of-type(1):hover
+{
+    background: crimson;
+}
+.qiangruo>span:nth-of-type(2):hover
+{
+    background: coral;
+}
+.qiangruo>span:nth-of-type(3):hover
+{
+    background: chartreuse;
+}
+.meituan>a:hover
+{
+    color: orangered;
+}
+.maoer
+{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    animation: maoer linear 2s infinite;
+}
+@keyframes maoer {
+    0%{
+        right:  -20px;
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        right:-5px;
+    }
+    100%
+    {
+        transform: scale(1);
+        right: -20px;
+    }
+}
